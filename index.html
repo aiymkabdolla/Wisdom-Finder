@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wisdom Finder — қазақ мақал-мәтелдерін өмірлік жағдайыңа сай тап.">
+    <title>Wisdom Finder — Қазақ даналығы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">
+        <span class="logo-symbol">W</span>
+        <span>Wisdom <strong>Finder</strong></span>
+    </a>
+
+    <nav class="nav">
+        <a href="#search">Іздеу</a>
+        <a href="#favorites">Таңдаулылар</a>
+        <a href="#history">Тарих</a>
+        <a href="#about">Біз туралы</a>
+    </nav>
+
+    <span class="header-note">ҚАЗАҚ ДАНАЛЫҒЫ</span>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-decoration">✳</div>
+        <p class="eyebrow">THE ART OF KAZAKH WISDOM</p>
+
+        <h1>Әр ойдың<br><em>өз даналығы бар.</em></h1>
+
+        <p class="hero-description">
+            Жағдайыңды сипатта. Wisdom Finder саған
+            сәйкес келетін үш қазақ мақалын ұсынады.
+        </p>
+
+        <a href="#search" class="primary-button">
+            Даналықты табу <span>↗</span>
+        </a>
+
+        <div class="hero-bottom">
+            <span>01 / WISDOM</span>
+            <span>02 / MEANING</span>
+            <span>03 / HERITAGE</span>
+        </div>
+    </section>
+
+    <section class="search-section" id="search">
+        <div class="section-heading">
+            <p class="eyebrow">YOUR STORY STARTS HERE</p>
+            <h2>Қандай жағдайға тап болдың?</h2>
+            <p>Ойыңды жаз — саған лайық үш мақал табайық.</p>
+        </div>
+
+        <div class="search-card">
+            <label for="situation">Жағдайыңды сипатта</label>
+
+            <textarea id="situation"
+                maxlength="500"
+                placeholder="Мысалы: Досым қиын кезде маған көмектесті..."></textarea>
+
+            <div class="input-footer">
+                <span id="charCount">0 / 500</span>
+                <button id="searchButton" class="primary-button">
+                    Мақалдарды табу →
+                </button>
+            </div>
+
+            <div class="examples">
+                <span>Мысалдар:</span>
+                <button class="example-chip" data-text="Еңбек етіп, мақсатыма жеткім келеді">Еңбек</button>
+                <button class="example-chip" data-text="Нағыз достық пен адал дос туралы">Достық</button>
+                <button class="example-chip" data-text="Білім алып, ақылды болғым келеді">Білім</button>
+                <button class="example-chip" data-text="Ата-ананы құрметтеу туралы">Отбасы</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section hidden" id="results">
+        <div class="section-heading">
+            <p class="eyebrow">HANDPICKED FOR YOU</p>
+            <h2>Саған арналған даналық</h2>
+            <p>Жағдайыңа сәйкес таңдалған мақал-мәтелдер.</p>
+        </div>
+        <div class="results-grid" id="resultsGrid"></div>
+    </section>
+
+    <section class="favorites-section" id="favorites">
+        <div class="section-heading">
+            <p class="eyebrow">YOUR COLLECTION</p>
+            <h2>Таңдаулы мақалдар</h2>
+            <p>Жүрегіңе жақын сөздерді сақта.</p>
+        </div>
+        <div class="favorites-grid" id="favoritesGrid">
+            <p class="empty-message">Әзірге сақталған мақал жоқ.</p>
+        </div>
+    </section>
+
+    <section class="history-section" id="history">
+        <div class="history-heading">
+            <div>
+                <p class="eyebrow">YOUR JOURNEY</p>
+                <h2>Іздеу тарихы</h2>
+            </div>
+            <button id="clearHistory" class="text-button">Тарихты тазалау</button>
+        </div>
+        <div class="history-list" id="historyList">
+            <p class="empty-message">Іздеу тарихы әзірге бос.</p>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-mark">“</div>
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+        <h2>Wisdom is <em>timeless.</em></h2>
+        <p>
+            Wisdom Finder — қазақ халқының ғасырлар бойы
+            жинақталған даналығын жаңа технологиямен
+            байланыстыратын цифрлық жоба.
+            Әрбір мақал — өмірлік тәжірибе мен терең ойдың көрінісі.
+        </p>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="#" class="logo">
+        <span class="logo-symbol">W</span>
+        <span>Wisdom <strong>Finder</strong></span>
+    </a>
+    <p>Қазақ даналығы — ұрпаққа аманат.</p>
+    <span>© 2026 Wisdom Finder</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
